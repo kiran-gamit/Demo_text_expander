@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Register Form Start</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
+
+    <script src="options.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+  </head>
+
+  <body>
+      <div class="form-header">
+            <h1>Text Expander</h1>
+      </div>    
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12" style="text-align: right;">
+                <button id="start" class="btn btn-info">Start</button>
+                <button id="stop" class="btn btn-danger">Stop</button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="firstname" class="label-title">Tag </label>&nbsp;&nbsp;
+                  <input type="text" id="tag"class="form-control" placeholder="Enter your tag name" required="required" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="lastname" class="label-title">Content</label>
+                  <textarea rows="4" cols="50" id="content"class="form-control" placeholder="enter your content">
+
+                  </textarea> 
+                </div>
+              </div>
+              <div class="col-lg-6">
+              </div>
+            </div>
+                <button id="save" class="btn btn-info">Save</button>
+                <button id="reset" class="btn btn-warning">Reset</button>
+                <br><br>
+                <div>
+                  <span>Note:use @ before your tag to replace content</span><br>
+                  <span>for exampe</span><br>
+                  <span>you enter tag <strong>'intro'</strong></span><br>
+                  <span>To replace content use <strong>'@intro'</strong></span>
+                  <br><br>
+                </div>
+                <div class="row">
+                  <table>
+                    <thead>
+                      <th>Tags</th>
+                      <th>Content</th>
+                      <th></th>
+                      <th></th>
+                    </thead>
+                    <tbody id="tbody">
+  
+                    </tbody>
+                  </table>
+                </div>
+        </div>
+        <br>
+        <div class="form-header">
+          <h1>Text Expander</h1>
+        </div> 
+            
+  </body>
+</html>

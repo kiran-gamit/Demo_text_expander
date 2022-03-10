@@ -1,0 +1,40 @@
+{
+    "manifest_version" : 2,
+    "name" : "Auto Text Complete",
+    "version" : "1.0",
+    "icons" : {
+        "128" : "icon128.png",
+        "48" : "icon48.png",
+        "16" : "icon16.png"
+    },
+
+
+    "options_page" : "options.html",
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],  
+          "css": ["jquery-ui-1.13.1/jquery-ui.css","style.css"],
+          "js": ["content.js","jquery-3.6.0.min.js","jquery-ui-1.13.1/jquery-ui.js"]
+        }
+    ], 
+    "background" : {
+       "scripts" : ["background.js"]
+    },
+
+    "browser_action":{
+        "default_icon" : "icon16.png"
+    },
+    
+
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "tabs",
+        "<all_urls>"
+      ]
+
+
+
+
+}

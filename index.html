@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Auto Fill Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script>
+        function myFunction() {
+  alert("You pressed a key inside the input field");
+
+  jsonObj = JSON.parse(window.localStorage.getItem("testObject"));
+  console.log(jsonObj);
+}
+    </script>
+  </head>
+
+  <body>
+
+        </div>    
+        <!-- form body -->
+        <div class="form-body">
+
+            <!-- Firstname and Lastname -->
+            <div class="horizontal-group">
+                <div class="form-group left">
+                    <label for="firstname" class="label-title">Tag</label>
+                    <input type="text" id="tag" class="form-input" onkeydown="myFunction()" required="required" />
+                </div>
+            </div>
+            
+                
+            </div>
+
+        </div>
+        
+    
+  </body>
+</html>
